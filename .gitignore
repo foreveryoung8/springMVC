@@ -1,0 +1,19 @@
+.idea/
+*.iml
+
+# Java build outputs
+target/
+out/
+build/
+*.class
+
+# Maven/Gradle caches
+.mvn/wrapper/maven-wrapper.jar
+.gradle/
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
