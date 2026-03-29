@@ -1,10 +1,11 @@
 package com.atguigu.mvc.config;
 
+import jakarta.servlet.Filter;
+import jakarta.servlet.MultipartConfigElement;
+import jakarta.servlet.ServletRegistration.Dynamic;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-import javax.servlet.Filter;
 
 /**
  * Date:2021/7/10
@@ -52,5 +53,10 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
         characterEncodingFilter.setForceResponseEncoding(true);
         HiddenHttpMethodFilter hiddenHttpMethodFilter = new HiddenHttpMethodFilter();
         return new Filter[]{characterEncodingFilter, hiddenHttpMethodFilter};
+    }
+
+    @Override
+    protected void customizeRegistration(Dynamic registration) {
+        registration.setMultipartConfig(new MultipartConfigElement(""));
     }
 }

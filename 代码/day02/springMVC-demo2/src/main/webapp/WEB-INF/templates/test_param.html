@@ -6,6 +6,7 @@
 </head>
 <body>
 <h1>测试请求参数</h1>
+<p th:text="|${path} test_param|"></p>
 <a th:href="@{/testServletAPI(username='admin',password=123456)}">测试使用servletAPI获取请求参数</a><br>
 <a th:href="@{/testParam(username='admin',password=123456)}">测试使用控制器的形参获取请求参数</a><br>
 <form th:action="@{/testParam}" method="get">

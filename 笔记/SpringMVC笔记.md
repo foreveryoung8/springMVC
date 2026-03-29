@@ -1,5 +1,5 @@
 [TOC]
-
+![img.png](img/img.png)
 # 一、SpringMVC简介
 
 ### 1、什么是MVC
@@ -284,7 +284,7 @@ public String HelloWorld() {
 
 从注解名称上我们可以看到，@RequestMapping注解的作用就是将请求和处理请求的控制器方法关联起来，建立映射关系。
 
-SpringMVC 接收到指定的请求，就会来找到在映射关系中对应的控制器方法来处理这个请求。
+SpringMVC 接收到指定的请求，就会来找到在映射关系中对应的控制器方法来处理这个请求。	
 
 ### 2、@RequestMapping注解的位置
 
